@@ -1,0 +1,203 @@
+h1{
+	text-align: center;
+	font-weight: bold;
+	color: #5C6E58;
+	font-family: calibri cursive regular;
+	margin-bottom: 25px;
+}
+
+h2{
+	margin-top: 50px;
+	margin-bottom: 10px;
+	color: #5C6E58;
+	font-weight: unset;
+}
+
+a{
+	text-decoration: none;
+	margin: 20px;
+	font-family: myriad pro regular;
+	color:#ffffff;
+	font-size: 15px;
+	height: 40px;
+}
+
+body{
+		text-align: justify;
+		font-family: Georgia, serif;
+		margin-top: 100px;
+}
+
+ul li a:hover{
+	font-weight: 900;
+	text-decoration: underline;
+	color: #000000;
+}
+.odd_sem, .even_sem{
+	text-align: center;
+    display: inline-block;
+	background: none;
+	border: 1px solid #cc33ff;
+	color: #cc33ff;
+	padding: 10px;
+	cursor: pointer;
+	outline: none;
+	position: relative;
+	animation: all 1s;
+	overflow: hidden;
+	border-radius: 10px;
+	font-weight: bold;
+	width: 300px;
+	margin: 3px
+}
+.odd_sem:before, .even_sem:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient(#00ff40, #3072d3);
+	width: 100%;
+	transition: all 0.5s;
+	z-index: -1;
+}
+.odd_sem:hover, .even_sem:hover{
+	color: #fff;
+}
+.odd_sem:before{
+	transform: rotate(-90deg);
+	transform-origin: bottom left;
+	height:100%;
+}
+.odd_sem:hover:before{
+	transform: rotate(0);
+}
+.even_sem:before{
+	height: 0;
+}
+.even_sem:hover:before{
+	height:100%;
+}
+#semester_list{
+	text-align: center;
+}
+
+#StartDate{
+	font-family: sans-serif;
+}
+
+footer a img{
+	height: 40px; 
+	width: 40px; 
+	float: none;
+	align-items: center;
+	margin: 0 0 0 0;
+}
+
+#footer{
+	margin-top: 100px;
+	margin-bottom: 100px;
+	text-align: center;
+}
+
+button{
+	background: indianred;
+	position: relative;
+	border: none;
+	transition: 0.8 ease-in;
+	z-index: 1;
+}
+button:before, button:after{
+	position: absolute;
+	content: "";
+	z-index: -1;
+}
+.btn:after{
+	height: 100%;
+	left: -35%;
+	top: 0;
+	transform: skew(50deg);
+	transition-duration: 0.6s;
+	transform-origin: top left;
+	width: 0;
+}
+.btn:hover:after{
+	height: 100%;
+	width: 135%;
+}
+
+details{
+	display: inline-block;
+}
+details img{
+	margin-left: 35%;
+}
+
+.button{
+	text-emphasis-color: gold;
+}
+
+@media screen and (max-width:767px) {
+	body{
+		width: 80%;
+		margin-left: 10%;
+		background: #fbeec1;
+	}
+	img{
+		margin: 0 1% 0 0;
+		width: 60%;
+		height: 60%;
+		float: left;
+	}
+	details img{
+	margin-left: 20%;
+	}
+}
+
+@media screen and (min-width:767px) and (max-width:992px) {
+	body{
+		width: 76%;
+		margin-left: 12%;
+		background: #c2cad0;
+	}
+	img{
+		margin: 0 1% 0 0;
+		width: 45%;
+		height: 45%;
+		float: left;
+	}
+	.ph{
+		margin: 0 1% 0 0;
+		width: 30%;
+		height: 30%;
+		float: left;
+	}
+	details img{
+	margin-left: 25%;
+	}
+}
+
+@media screen and (min-width:992px) {
+	body{
+		width: 70%;
+		margin-left: 15%;
+		background: #b3ffb3;
+	}
+	img{
+		margin: 0 1% 0 0;
+		width: 30%;
+		height: 30%;
+		float: left;
+	}
+	.ph{
+		margin: 0 2% 0 0;
+		width: 15%;
+		height: 15%;
+		float: left;
+	}
+	.ph1{
+		margin: 0 2% 0 0;
+		width: 20%;
+		height: 20%;
+		float: left;
+	}
+}
